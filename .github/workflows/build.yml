@@ -1,0 +1,104 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+
+      - name: Build
+        run: cmake --build build --config Release --parallel
+
+      - name: Collect VST3 bundles
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist/VST3 | Out-Null
+          Get-ChildItem build -Recurse -Directory -Filter "*.vst3" |
+            Where-Object { $_.FullName -match "Release\\VST3\\[^\\]+\.vst3$" } |
+            ForEach-Object { Copy-Item $_.FullName -Destination dist/VST3 -Recurse -Force }
+          Get-ChildItem dist/VST3
+          Copy-Item README.md dist/
+          Compress-Archive -Path dist/* -DestinationPath "8cee-Golden-Era-Bundle-Windows-VST3.zip" -Force
+
+      - name: Build installer
+        shell: pwsh
+        run: |
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" /DAppVersion=1.0.0 installer\windows.iss
+          Get-ChildItem installer\Output
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Golden-Era-Windows
+          path: |
+            8cee-Golden-Era-Bundle-Windows-VST3.zip
+            installer/Output/*.exe
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            8cee-Golden-Era-Bundle-Windows-VST3.zip
+            installer/Output/*.exe
+
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -G Xcode -DCMAKE_OSX_ARCHITECTURES="arm64;x86_64"
+
+      - name: Build
+        run: cmake --build build --config Release --parallel -- -quiet
+
+      - name: Package
+        run: |
+          mkdir -p dist/VST3 dist/Components
+          find build -path "*Release/VST3/*.vst3" -maxdepth 5 -type d -exec cp -R {} dist/VST3/ \;
+          find build -path "*Release/AU/*.component" -maxdepth 5 -type d -exec cp -R {} dist/Components/ \;
+          # Ad-hoc sign so Apple Silicon hosts will load the bundles
+          for b in dist/VST3/*.vst3 dist/Components/*.component; do codesign --force --deep -s - "$b"; done
+          cp README.md dist/
+          ls -R dist | head -40
+          (cd dist && zip -qry ../8cee-Golden-Era-Bundle-macOS.zip .)
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Golden-Era-macOS
+          path: 8cee-Golden-Era-Bundle-macOS.zip
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: 8cee-Golden-Era-Bundle-macOS.zip
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxcomposite-dev libfreetype-dev libfontconfig1-dev libgl1-mesa-dev ninja-build xvfb
+      - name: Build tests
+        run: |
+          cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DERA_BUILD_TESTS=ON "-DERA_FORMATS=VST3"
+          cmake --build build --target TestEraQ TestEraC TestEraS TestEraL
+      - name: Run DSP tests (every factory preset)
+        run: |
+          for p in EraQ EraC EraS EraL; do
+            xvfb-run -a ./build/tests/Test${p}_artefacts/Release/Test${p} || exit 1
+          done

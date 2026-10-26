@@ -1,0 +1,9 @@
+build/
+build-*/
+dist/
+installer/Output/
+.vs/
+.vscode/
+.idea/
+*.user
+.DS_Store
