@@ -1,0 +1,102 @@
+{
+ "name": "Era-C",
+ "params": [
+  {
+   "key": "style",
+   "name": "Style",
+   "options": [
+    "Clean",
+    "Punch",
+    "Opto",
+    "Slam"
+   ],
+   "default": 0
+  },
+  {
+   "key": "threshold",
+   "name": "Threshold",
+   "min": -60,
+   "max": 0,
+   "default": -18,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "ratio",
+   "name": "Ratio",
+   "min": 1,
+   "max": 20,
+   "default": 4,
+   "dynamic_display": true
+  },
+  {
+   "key": "attack",
+   "name": "Attack",
+   "min": 0,
+   "max": 100,
+   "default": 62.207,
+   "dynamic_display": true
+  },
+  {
+   "key": "release",
+   "name": "Release",
+   "min": 0,
+   "max": 100,
+   "default": 54.729,
+   "dynamic_display": true
+  },
+  {
+   "key": "autorel",
+   "name": "Auto Rel",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "knee",
+   "name": "Knee",
+   "min": 0,
+   "max": 24,
+   "default": 6,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "makeup",
+   "name": "Makeup",
+   "min": -12,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "automakeup",
+   "name": "Auto Gain",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "mix",
+   "name": "Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "schpf",
+   "name": "SC Hi-Pass",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "dynamic_display": true
+  }
+ ]
+}

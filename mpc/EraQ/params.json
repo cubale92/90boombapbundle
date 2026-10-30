@@ -1,0 +1,575 @@
+{
+ "name": "Era-Q",
+ "params": [
+  {
+   "key": "band",
+   "name": "Band",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "b1_on",
+   "name": "1 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b1_type",
+   "name": "1 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 3
+  },
+  {
+   "key": "b1_freq",
+   "name": "1 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 5.87,
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_gain",
+   "name": "1 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_q",
+   "name": "1 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b1_slope",
+   "name": "1 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b1_place",
+   "name": "1 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b2_on",
+   "name": "2 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b2_type",
+   "name": "2 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b2_freq",
+   "name": "2 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 21.774,
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_gain",
+   "name": "2 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_q",
+   "name": "2 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b2_slope",
+   "name": "2 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b2_place",
+   "name": "2 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b3_on",
+   "name": "3 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b3_type",
+   "name": "3 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b3_freq",
+   "name": "3 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 36.564,
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_gain",
+   "name": "3 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_q",
+   "name": "3 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b3_slope",
+   "name": "3 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b3_place",
+   "name": "3 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b4_on",
+   "name": "4 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b4_type",
+   "name": "4 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b4_freq",
+   "name": "4 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 51.469,
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_gain",
+   "name": "4 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_q",
+   "name": "4 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b4_slope",
+   "name": "4 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b4_place",
+   "name": "4 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b5_on",
+   "name": "5 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b5_type",
+   "name": "5 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b5_freq",
+   "name": "5 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 66.667,
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_gain",
+   "name": "5 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_q",
+   "name": "5 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b5_slope",
+   "name": "5 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b5_place",
+   "name": "5 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b6_on",
+   "name": "6 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b6_type",
+   "name": "6 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b6_freq",
+   "name": "6 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 79.931,
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_gain",
+   "name": "6 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_q",
+   "name": "6 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b6_slope",
+   "name": "6 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b6_place",
+   "name": "6 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b7_on",
+   "name": "7 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b7_type",
+   "name": "7 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 2
+  },
+  {
+   "key": "b7_freq",
+   "name": "7 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 89.966,
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_gain",
+   "name": "7 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_q",
+   "name": "7 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b7_slope",
+   "name": "7 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b7_place",
+   "name": "7 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b8_on",
+   "name": "8 On",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "b8_type",
+   "name": "8 Shape",
+   "options": [
+    "Bell",
+    "Lo Shelf",
+    "Hi Shelf",
+    "Lo Cut",
+    "Hi Cut",
+    "Notch"
+   ],
+   "default": 4
+  },
+  {
+   "key": "b8_freq",
+   "name": "8 Freq",
+   "min": 0,
+   "max": 100,
+   "default": 98.475,
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_gain",
+   "name": "8 Gain",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_q",
+   "name": "8 Q",
+   "min": 0,
+   "max": 100,
+   "default": 34.291,
+   "dynamic_display": true
+  },
+  {
+   "key": "b8_slope",
+   "name": "8 Slope",
+   "options": [
+    "12 dB",
+    "24 dB",
+    "48 dB"
+   ],
+   "default": 1
+  },
+  {
+   "key": "b8_place",
+   "name": "8 Place",
+   "options": [
+    "Stereo",
+    "Mid",
+    "Side"
+   ],
+   "default": 0
+  },
+  {
+   "key": "color",
+   "name": "Color",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "output",
+   "name": "Output",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  }
+ ]
+}

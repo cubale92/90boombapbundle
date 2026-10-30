@@ -1,0 +1,182 @@
+[
+  {
+    "category": "Init",
+    "name": "Init (-1 dB Safety)",
+    "values": {
+      "gain": 0.0,
+      "ceiling": -1.0,
+      "release": 100.000015258789062,
+      "style": 0.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Golden Era Master",
+    "values": {
+      "gain": 4.0,
+      "ceiling": -0.300000190734863,
+      "release": 119.999984741210938,
+      "style": 2.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Loud '95 Single",
+    "values": {
+      "gain": 8.0,
+      "ceiling": -0.100000381469727,
+      "release": 60.000011444091797,
+      "style": 3.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "R&B Radio Edit",
+    "values": {
+      "gain": 5.0,
+      "ceiling": -0.5,
+      "release": 199.999969482421875,
+      "style": 0.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "New Jack Club Mix",
+    "values": {
+      "gain": 7.0,
+      "ceiling": -0.300000190734863,
+      "release": 80.000015258789062,
+      "style": 1.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Mixtape Tape Slam",
+    "values": {
+      "gain": 9.0,
+      "ceiling": -0.5,
+      "release": 40.000003814697266,
+      "style": 2.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Vinyl Cut Headroom",
+    "values": {
+      "gain": 2.0,
+      "ceiling": -2.0,
+      "release": 250.000045776367188,
+      "style": 0.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Streaming Safe -1",
+    "values": {
+      "gain": 3.0,
+      "ceiling": -1.0,
+      "release": 149.999984741210938,
+      "style": 0.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Master",
+    "name": "Boom Bap Knock Master",
+    "values": {
+      "gain": 6.0,
+      "ceiling": -0.300000190734863,
+      "release": 50.0,
+      "style": 1.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "Drum Bus Peak Catch",
+    "values": {
+      "gain": 3.0,
+      "ceiling": -3.0,
+      "release": 30.000001907348633,
+      "style": 1.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "Snare Crack Clip",
+    "values": {
+      "gain": 5.0,
+      "ceiling": -4.0,
+      "release": 15.0,
+      "style": 3.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "Vocal Peak Catch",
+    "values": {
+      "gain": 2.0,
+      "ceiling": -6.0,
+      "release": 80.000015258789062,
+      "style": 0.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "808 / Sub Clip",
+    "values": {
+      "gain": 6.0,
+      "ceiling": -1.0,
+      "release": 30.000001907348633,
+      "style": 3.0,
+      "link": 100.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "Sample Loop Flatten",
+    "values": {
+      "gain": 4.0,
+      "ceiling": -3.0,
+      "release": 100.000015258789062,
+      "style": 2.0,
+      "link": 60.0,
+      "unity": 0.0
+    }
+  },
+  {
+    "category": "Bus",
+    "name": "Wide Keys Hold",
+    "values": {
+      "gain": 3.0,
+      "ceiling": -4.0,
+      "release": 199.999969482421875,
+      "style": 0.0,
+      "link": 40.0,
+      "unity": 0.0
+    }
+  }
+]

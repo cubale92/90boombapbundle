@@ -1,0 +1,114 @@
+{
+ "name": "Era-S",
+ "params": [
+  {
+   "key": "mode",
+   "name": "Mode",
+   "options": [
+    "Tape",
+    "Tube",
+    "Console",
+    "SP 26k",
+    "Sixty 40k",
+    "Vari-Rate"
+   ],
+   "default": 0
+  },
+  {
+   "key": "drive",
+   "name": "Drive",
+   "min": 0,
+   "max": 36,
+   "default": 6,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "bias",
+   "name": "Bias",
+   "min": -100,
+   "max": 100,
+   "default": 0,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "tone",
+   "name": "Tone",
+   "min": -12,
+   "max": 12,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "lowcut",
+   "name": "Low Cut",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "dynamic_display": true
+  },
+  {
+   "key": "highcut",
+   "name": "High Cut",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "dynamic_display": true
+  },
+  {
+   "key": "bits",
+   "name": "Bits",
+   "min": 4,
+   "max": 16,
+   "default": 12,
+   "unit": "bit",
+   "display": "int"
+  },
+  {
+   "key": "rate",
+   "name": "Rate",
+   "min": 0,
+   "max": 100,
+   "default": 80.757,
+   "dynamic_display": true
+  },
+  {
+   "key": "dust",
+   "name": "Dust",
+   "min": 0,
+   "max": 100,
+   "default": 0,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "mix",
+   "name": "Mix",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "output",
+   "name": "Output",
+   "min": -24,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "autogain",
+   "name": "Auto Gain",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  }
+ ]
+}

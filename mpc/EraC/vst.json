@@ -1,0 +1,33 @@
+{
+ "name": "Era-C",
+ "vendor": "8cee",
+ "uid": "EraC",
+ "version": 1000,
+ "so": "erac.so",
+ "params": "params.json",
+ "layout": "layout.conf",
+ "presets": "presets.json",
+ "effect": true,
+ "build": {
+  "root": "../..",
+  "sources": [
+   "mpc/EraC/erac_engine.cpp"
+  ],
+  "cflags": [
+   "-Impc/common",
+   "-ffast-math"
+  ],
+  "libs": [
+   "-lm",
+   "-static-libstdc++",
+   "-static-libgcc"
+  ],
+  "cflags_arm": [
+   "-mfpu=neon"
+  ]
+ },
+ "targets": [
+  "armv7",
+  "aarch64"
+ ]
+}

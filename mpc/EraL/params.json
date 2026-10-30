@@ -1,0 +1,60 @@
+{
+ "name": "Era-L",
+ "params": [
+  {
+   "key": "gain",
+   "name": "Gain",
+   "min": 0,
+   "max": 24,
+   "default": 0,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "ceiling",
+   "name": "Ceiling",
+   "min": -12,
+   "max": 0,
+   "default": -1,
+   "unit": "dB",
+   "dynamic_display": true
+  },
+  {
+   "key": "release",
+   "name": "Release",
+   "min": 0,
+   "max": 100,
+   "default": 66.667,
+   "dynamic_display": true
+  },
+  {
+   "key": "style",
+   "name": "Style",
+   "options": [
+    "Clean",
+    "Punchy",
+    "Warm",
+    "Loud '95"
+   ],
+   "default": 0
+  },
+  {
+   "key": "link",
+   "name": "Link",
+   "min": 0,
+   "max": 100,
+   "default": 100,
+   "unit": "%",
+   "dynamic_display": true
+  },
+  {
+   "key": "unity",
+   "name": "Unity",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  }
+ ]
+}

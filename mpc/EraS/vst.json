@@ -1,0 +1,33 @@
+{
+ "name": "Era-S",
+ "vendor": "8cee",
+ "uid": "EraS",
+ "version": 1000,
+ "so": "eras.so",
+ "params": "params.json",
+ "layout": "layout.conf",
+ "presets": "presets.json",
+ "effect": true,
+ "build": {
+  "root": "../..",
+  "sources": [
+   "mpc/EraS/eras_engine.cpp"
+  ],
+  "cflags": [
+   "-Impc/common",
+   "-ffast-math"
+  ],
+  "libs": [
+   "-lm",
+   "-static-libstdc++",
+   "-static-libgcc"
+  ],
+  "cflags_arm": [
+   "-mfpu=neon"
+  ]
+ },
+ "targets": [
+  "armv7",
+  "aarch64"
+ ]
+}

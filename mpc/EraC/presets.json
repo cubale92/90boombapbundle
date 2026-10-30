@@ -1,0 +1,388 @@
+{
+ "presets": [
+  {
+   "name": "Init",
+   "values": {
+    "style": "Clean",
+    "threshold": -18.0,
+    "ratio": 4.0,
+    "attack": 62.207,
+    "release": 54.729,
+    "autorel": "Off",
+    "knee": 6.0,
+    "makeup": 0.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "NY Parallel Smash",
+   "values": {
+    "style": "Slam",
+    "threshold": -34.0,
+    "ratio": 12.0,
+    "attack": 27.035,
+    "release": 42.465,
+    "autorel": "Off",
+    "knee": 2.0,
+    "makeup": 12.0,
+    "automakeup": "Off",
+    "mix": 38.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Snare Snap Back",
+   "values": {
+    "style": "Punch",
+    "threshold": -20.0,
+    "ratio": 4.0,
+    "attack": 69.109,
+    "release": 42.465,
+    "autorel": "Off",
+    "knee": 4.0,
+    "makeup": 3.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Break Glue",
+   "values": {
+    "style": "Punch",
+    "threshold": -16.0,
+    "ratio": 2.5,
+    "attack": 62.207,
+    "release": 54.729,
+    "autorel": "On",
+    "knee": 6.0,
+    "makeup": 2.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 34.13
+   }
+  },
+  {
+   "name": "Kick Knock",
+   "values": {
+    "style": "Clean",
+    "threshold": -18.0,
+    "ratio": 5.0,
+    "attack": 72.965,
+    "release": 46.509,
+    "autorel": "Off",
+    "knee": 3.0,
+    "makeup": 3.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "New Jack Snare Crack",
+   "values": {
+    "style": "Slam",
+    "threshold": -24.0,
+    "ratio": 8.0,
+    "attack": 16.276,
+    "release": 35.356,
+    "autorel": "Off",
+    "knee": 0.0,
+    "makeup": 7.0,
+    "automakeup": "Off",
+    "mix": 70.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Dusty Loop Pump",
+   "values": {
+    "style": "Punch",
+    "threshold": -22.0,
+    "ratio": 4.0,
+    "attack": 75.106,
+    "release": 53.619,
+    "autorel": "Off",
+    "knee": 6.0,
+    "makeup": 4.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Room Mic Crush",
+   "values": {
+    "style": "Slam",
+    "threshold": -40.0,
+    "ratio": 20.0,
+    "attack": 8.138,
+    "release": 51.138,
+    "autorel": "Off",
+    "knee": 0.0,
+    "makeup": 16.0,
+    "automakeup": "Off",
+    "mix": 30.0,
+    "schpf": 55.664
+   }
+  },
+  {
+   "name": "Hats Tamer",
+   "values": {
+    "style": "Clean",
+    "threshold": -24.0,
+    "ratio": 3.0,
+    "attack": 35.173,
+    "release": 33.461,
+    "autorel": "Off",
+    "knee": 6.0,
+    "makeup": 1.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 93.068
+   }
+  },
+  {
+   "name": "Steady Bass Line",
+   "values": {
+    "style": "Opto",
+    "threshold": -22.0,
+    "ratio": 4.0,
+    "attack": 66.968,
+    "release": 65.883,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 4.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Sub Leveler",
+   "values": {
+    "style": "Clean",
+    "threshold": -20.0,
+    "ratio": 3.0,
+    "attack": 75.106,
+    "release": 60.892,
+    "autorel": "Off",
+    "knee": 8.0,
+    "makeup": 3.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Finger Bass Grip",
+   "values": {
+    "style": "Slam",
+    "threshold": -20.0,
+    "ratio": 4.0,
+    "attack": 59.587,
+    "release": 46.509,
+    "autorel": "Off",
+    "knee": 4.0,
+    "makeup": 4.0,
+    "automakeup": "Off",
+    "mix": 85.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Boom Bap Rap Vocal",
+   "values": {
+    "style": "Slam",
+    "threshold": -22.0,
+    "ratio": 6.0,
+    "attack": 48.072,
+    "release": 42.465,
+    "autorel": "Off",
+    "knee": 3.0,
+    "makeup": 6.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 43.068
+   }
+  },
+  {
+   "name": "R&B Silk Leveler",
+   "values": {
+    "style": "Opto",
+    "threshold": -24.0,
+    "ratio": 3.0,
+    "attack": 64.348,
+    "release": 68.363,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 5.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 43.068
+   }
+  },
+  {
+   "name": "Ad-lib Squash",
+   "values": {
+    "style": "Slam",
+    "threshold": -30.0,
+    "ratio": 20.0,
+    "attack": 21.037,
+    "release": 37.051,
+    "autorel": "Off",
+    "knee": 0.0,
+    "makeup": 12.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 55.664
+   }
+  },
+  {
+   "name": "Harmony Stack Glue",
+   "values": {
+    "style": "Opto",
+    "threshold": -20.0,
+    "ratio": 2.0,
+    "attack": 70.346,
+    "release": 74.102,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 2.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 55.664
+   }
+  },
+  {
+   "name": "Hook Upfront",
+   "values": {
+    "style": "Punch",
+    "threshold": -18.0,
+    "ratio": 4.0,
+    "attack": 56.21,
+    "release": 46.509,
+    "autorel": "On",
+    "knee": 6.0,
+    "makeup": 4.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 50.0
+   }
+  },
+  {
+   "name": "Crate Loop Squeeze",
+   "values": {
+    "style": "Punch",
+    "threshold": -20.0,
+    "ratio": 3.0,
+    "attack": 70.346,
+    "release": 55.768,
+    "autorel": "On",
+    "knee": 6.0,
+    "makeup": 3.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Keys Smoother",
+   "values": {
+    "style": "Opto",
+    "threshold": -22.0,
+    "ratio": 2.5,
+    "attack": 66.968,
+    "release": 70.512,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 3.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 0.0
+   }
+  },
+  {
+   "name": "Horn Section Tame",
+   "values": {
+    "style": "Clean",
+    "threshold": -18.0,
+    "ratio": 3.0,
+    "attack": 54.069,
+    "release": 51.138,
+    "autorel": "Off",
+    "knee": 6.0,
+    "makeup": 2.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 62.596
+   }
+  },
+  {
+   "name": "Mix Bus Glue 2:1",
+   "values": {
+    "style": "Punch",
+    "threshold": -16.0,
+    "ratio": 2.0,
+    "attack": 75.106,
+    "release": 59.358,
+    "autorel": "On",
+    "knee": 6.0,
+    "makeup": 2.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 34.13
+   }
+  },
+  {
+   "name": "Drum Bus 4:1 Slam",
+   "values": {
+    "style": "Punch",
+    "threshold": -20.0,
+    "ratio": 4.0,
+    "attack": 48.072,
+    "release": 48.205,
+    "autorel": "On",
+    "knee": 4.0,
+    "makeup": 4.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 21.534
+   }
+  },
+  {
+   "name": "Gentle Master Hold",
+   "values": {
+    "style": "Clean",
+    "threshold": -12.0,
+    "ratio": 1.5,
+    "attack": 75.106,
+    "release": 70.512,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 1.5,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 46.727
+   }
+  },
+  {
+   "name": "Radio Mix '94",
+   "values": {
+    "style": "Opto",
+    "threshold": -18.0,
+    "ratio": 3.0,
+    "attack": 62.207,
+    "release": 62.949,
+    "autorel": "On",
+    "knee": 12.0,
+    "makeup": 4.0,
+    "automakeup": "Off",
+    "mix": 100.0,
+    "schpf": 38.919
+   }
+  }
+ ]
+}

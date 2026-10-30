@@ -1,0 +1,169 @@
+{
+ "presets": [
+  {
+   "name": "Init",
+   "values": {
+    "gain": 0.0,
+    "ceiling": -1.0,
+    "release": 66.667,
+    "style": "Clean",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Golden Era Master",
+   "values": {
+    "gain": 4.0,
+    "ceiling": -0.3,
+    "release": 69.306,
+    "style": "Warm",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Loud '95 Single",
+   "values": {
+    "gain": 8.0,
+    "ceiling": -0.1,
+    "release": 59.272,
+    "style": "Loud '95",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "R&B Radio Edit",
+   "values": {
+    "gain": 5.0,
+    "ceiling": -0.5,
+    "release": 76.701,
+    "style": "Clean",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "New Jack Club Mix",
+   "values": {
+    "gain": 7.0,
+    "ceiling": -0.3,
+    "release": 63.436,
+    "style": "Punchy",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Mixtape Tape Slam",
+   "values": {
+    "gain": 9.0,
+    "ceiling": -0.5,
+    "release": 53.402,
+    "style": "Warm",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Vinyl Cut Headroom",
+   "values": {
+    "gain": 2.0,
+    "ceiling": -2.0,
+    "release": 79.931,
+    "style": "Clean",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Streaming Safe -1",
+   "values": {
+    "gain": 3.0,
+    "ceiling": -1.0,
+    "release": 72.536,
+    "style": "Clean",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Boom Bap Knock Master",
+   "values": {
+    "gain": 6.0,
+    "ceiling": -0.3,
+    "release": 56.632,
+    "style": "Punchy",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Drum Bus Peak Catch",
+   "values": {
+    "gain": 3.0,
+    "ceiling": -3.0,
+    "release": 49.237,
+    "style": "Punchy",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Snare Crack Clip",
+   "values": {
+    "gain": 5.0,
+    "ceiling": -4.0,
+    "release": 39.203,
+    "style": "Loud '95",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Vocal Peak Catch",
+   "values": {
+    "gain": 2.0,
+    "ceiling": -6.0,
+    "release": 63.436,
+    "style": "Clean",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "808 / Sub Clip",
+   "values": {
+    "gain": 6.0,
+    "ceiling": -1.0,
+    "release": 49.237,
+    "style": "Loud '95",
+    "link": 100.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Sample Loop Flatten",
+   "values": {
+    "gain": 4.0,
+    "ceiling": -3.0,
+    "release": 66.667,
+    "style": "Warm",
+    "link": 60.0,
+    "unity": "Off"
+   }
+  },
+  {
+   "name": "Wide Keys Hold",
+   "values": {
+    "gain": 3.0,
+    "ceiling": -4.0,
+    "release": 76.701,
+    "style": "Clean",
+    "link": 40.0,
+    "unity": "Off"
+   }
+  }
+ ]
+}

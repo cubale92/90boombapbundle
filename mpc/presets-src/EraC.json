@@ -1,0 +1,410 @@
+[
+  {
+    "category": "Init",
+    "name": "Init",
+    "values": {
+      "style": 0.0,
+      "threshold": -18.0,
+      "ratio": 4.0,
+      "attack": 10.0,
+      "release": 150.000015258789062,
+      "autorel": 0.0,
+      "knee": 6.0,
+      "makeup": 0.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "NY Parallel Smash",
+    "values": {
+      "style": 3.0,
+      "threshold": -34.0,
+      "ratio": 12.0,
+      "attack": 0.500000059604645,
+      "release": 70.0,
+      "autorel": 0.0,
+      "knee": 2.0,
+      "makeup": 12.0,
+      "automakeup": 0.0,
+      "mix": 38.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Snare Snap Back",
+    "values": {
+      "style": 1.0,
+      "threshold": -20.0,
+      "ratio": 4.0,
+      "attack": 18.00001335144043,
+      "release": 70.0,
+      "autorel": 0.0,
+      "knee": 4.0,
+      "makeup": 3.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Break Glue",
+    "values": {
+      "style": 1.0,
+      "threshold": -16.0,
+      "ratio": 2.5,
+      "attack": 10.0,
+      "release": 150.000015258789062,
+      "autorel": 1.0,
+      "knee": 6.0,
+      "makeup": 2.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 60.000007629394531
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Kick Knock",
+    "values": {
+      "style": 0.0,
+      "threshold": -18.0,
+      "ratio": 5.0,
+      "attack": 25.000005722045898,
+      "release": 90.0,
+      "autorel": 0.0,
+      "knee": 3.0,
+      "makeup": 3.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "New Jack Snare Crack",
+    "values": {
+      "style": 3.0,
+      "threshold": -24.0,
+      "ratio": 8.0,
+      "attack": 0.200000047683716,
+      "release": 45.0,
+      "autorel": 0.0,
+      "knee": 0.0,
+      "makeup": 7.0,
+      "automakeup": 0.0,
+      "mix": 70.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Dusty Loop Pump",
+    "values": {
+      "style": 1.0,
+      "threshold": -22.0,
+      "ratio": 4.0,
+      "attack": 30.000003814697266,
+      "release": 140.000015258789062,
+      "autorel": 0.0,
+      "knee": 6.0,
+      "makeup": 4.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Room Mic Crush",
+    "values": {
+      "style": 3.0,
+      "threshold": -40.0,
+      "ratio": 20.0,
+      "attack": 0.100000001490116,
+      "release": 120.0,
+      "autorel": 0.0,
+      "knee": 0.0,
+      "makeup": 16.0,
+      "automakeup": 0.0,
+      "mix": 30.0,
+      "schpf": 120.000007629394531
+    }
+  },
+  {
+    "category": "Drums",
+    "name": "Hats Tamer",
+    "values": {
+      "style": 0.0,
+      "threshold": -24.0,
+      "ratio": 3.0,
+      "attack": 1.000000476837158,
+      "release": 40.0,
+      "autorel": 0.0,
+      "knee": 6.0,
+      "makeup": 1.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 400.000030517578125
+    }
+  },
+  {
+    "category": "Bass",
+    "name": "Steady Bass Line",
+    "values": {
+      "style": 2.0,
+      "threshold": -22.0,
+      "ratio": 4.0,
+      "attack": 15.000004768371582,
+      "release": 300.000030517578125,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 4.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Bass",
+    "name": "Sub Leveler",
+    "values": {
+      "style": 0.0,
+      "threshold": -20.0,
+      "ratio": 3.0,
+      "attack": 30.000003814697266,
+      "release": 220.000030517578125,
+      "autorel": 0.0,
+      "knee": 8.0,
+      "makeup": 3.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Bass",
+    "name": "Finger Bass Grip",
+    "values": {
+      "style": 3.0,
+      "threshold": -20.0,
+      "ratio": 4.0,
+      "attack": 8.000006675720215,
+      "release": 90.0,
+      "autorel": 0.0,
+      "knee": 4.0,
+      "makeup": 4.0,
+      "automakeup": 0.0,
+      "mix": 85.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Vocals",
+    "name": "Boom Bap Rap Vocal",
+    "values": {
+      "style": 3.0,
+      "threshold": -22.0,
+      "ratio": 6.0,
+      "attack": 3.00000262260437,
+      "release": 70.0,
+      "autorel": 0.0,
+      "knee": 3.0,
+      "makeup": 6.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 80.0
+    }
+  },
+  {
+    "category": "Vocals",
+    "name": "R&B Silk Leveler",
+    "values": {
+      "style": 2.0,
+      "threshold": -24.0,
+      "ratio": 3.0,
+      "attack": 12.000006675720215,
+      "release": 349.99993896484375,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 5.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 80.0
+    }
+  },
+  {
+    "category": "Vocals",
+    "name": "Ad-lib Squash",
+    "values": {
+      "style": 3.0,
+      "threshold": -30.0,
+      "ratio": 20.0,
+      "attack": 0.300000071525574,
+      "release": 50.0,
+      "autorel": 0.0,
+      "knee": 0.0,
+      "makeup": 12.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 120.000007629394531
+    }
+  },
+  {
+    "category": "Vocals",
+    "name": "Harmony Stack Glue",
+    "values": {
+      "style": 2.0,
+      "threshold": -20.0,
+      "ratio": 2.0,
+      "attack": 20.000019073486328,
+      "release": 500.0,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 2.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 120.000007629394531
+    }
+  },
+  {
+    "category": "Vocals",
+    "name": "Hook Upfront",
+    "values": {
+      "style": 1.0,
+      "threshold": -18.0,
+      "ratio": 4.0,
+      "attack": 6.000000953674316,
+      "release": 90.0,
+      "autorel": 1.0,
+      "knee": 6.0,
+      "makeup": 4.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 100.0
+    }
+  },
+  {
+    "category": "Samples & Keys",
+    "name": "Crate Loop Squeeze",
+    "values": {
+      "style": 1.0,
+      "threshold": -20.0,
+      "ratio": 3.0,
+      "attack": 20.000019073486328,
+      "release": 160.000015258789062,
+      "autorel": 1.0,
+      "knee": 6.0,
+      "makeup": 3.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Samples & Keys",
+    "name": "Keys Smoother",
+    "values": {
+      "style": 2.0,
+      "threshold": -22.0,
+      "ratio": 2.5,
+      "attack": 15.000004768371582,
+      "release": 399.99993896484375,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 3.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 20.0
+    }
+  },
+  {
+    "category": "Samples & Keys",
+    "name": "Horn Section Tame",
+    "values": {
+      "style": 0.0,
+      "threshold": -18.0,
+      "ratio": 3.0,
+      "attack": 5.000000953674316,
+      "release": 120.0,
+      "autorel": 0.0,
+      "knee": 6.0,
+      "makeup": 2.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 150.0
+    }
+  },
+  {
+    "category": "Bus & Master",
+    "name": "Mix Bus Glue 2:1",
+    "values": {
+      "style": 1.0,
+      "threshold": -16.0,
+      "ratio": 2.0,
+      "attack": 30.000003814697266,
+      "release": 199.999984741210938,
+      "autorel": 1.0,
+      "knee": 6.0,
+      "makeup": 2.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 60.000007629394531
+    }
+  },
+  {
+    "category": "Bus & Master",
+    "name": "Drum Bus 4:1 Slam",
+    "values": {
+      "style": 1.0,
+      "threshold": -20.0,
+      "ratio": 4.0,
+      "attack": 3.00000262260437,
+      "release": 99.999969482421875,
+      "autorel": 1.0,
+      "knee": 4.0,
+      "makeup": 4.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 40.0
+    }
+  },
+  {
+    "category": "Bus & Master",
+    "name": "Gentle Master Hold",
+    "values": {
+      "style": 0.0,
+      "threshold": -12.0,
+      "ratio": 1.5,
+      "attack": 30.000003814697266,
+      "release": 399.99993896484375,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 1.5,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 90.0
+    }
+  },
+  {
+    "category": "Bus & Master",
+    "name": "Radio Mix '94",
+    "values": {
+      "style": 2.0,
+      "threshold": -18.0,
+      "ratio": 3.0,
+      "attack": 10.0,
+      "release": 250.0,
+      "autorel": 1.0,
+      "knee": 12.0,
+      "makeup": 4.0,
+      "automakeup": 0.0,
+      "mix": 100.0,
+      "schpf": 69.999984741210938
+    }
+  }
+]

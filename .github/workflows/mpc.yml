@@ -1,0 +1,67 @@
+name: MPC (VST2 Linux ARM)
+
+# Builds the four plug-ins for Akai MPC OS standalone devices with the sd88me/mpc-vst-plugins wrapper and tools:
+# armv7 (Gen1 MPC Live/One/X/Key and Force) and aarch64 (Gen2), packaged as install zips.
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  MPC_VST_REF: adc48a35e8e190cd4c7a1adb20da5a4cce2fdea4   # pinned sd88me/mpc-vst-plugins commit
+  VERSION: 1.0.0
+
+jobs:
+  mpc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/checkout@v5
+        with:
+          repository: sd88me/mpc-vst-plugins
+          ref: ${{ env.MPC_VST_REF }}
+          path: _mpc-vst-plugins
+
+      - uses: docker/setup-qemu-action@v3
+        with:
+          platforms: arm,arm64
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: pip install pillow
+
+      - name: Build, test and package
+        run: |
+          export MPC_VST="$GITHUB_WORKSPACE/_mpc-vst-plugins"
+          mpc/build.sh "$VERSION" dist-mpc
+
+      - name: Check glibc (must load on MPC OS 2.x and 3.x)
+        run: |
+          for so in mpc/*/build/*.so; do
+            v=$(readelf -V "$so" | grep -o 'GLIBC_[0-9.]*' | sort -uV | tail -1)
+            echo "$so needs $v"
+            python3 -c "import sys;v=tuple(map(int,'$v'.split('_')[1].split('.')));sys.exit(0 if v<=(2,32) else 1)"
+          done
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Golden-Era-MPC
+          path: |
+            dist-mpc/*.zip
+            dist-mpc/previews/*.png
+
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist-mpc/*.zip

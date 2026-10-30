@@ -112,6 +112,61 @@ int main (int argc, char** argv)
         return 0;
     }
 
+    if (argc >= 5 && juce::String (argv[1]) == "--render")
+    {
+        // --render <preset index> <in.f32> <out.f32>: interleaved stereo float32 at 44.1 kHz in 128-frame blocks,
+        // the MPC's format, so mpc/tests/engine_test.cpp can compare the MPC engines with the desktop plug-ins.
+        proc->releaseResources();
+        proc->setPlayConfigDetails (2, 2, 44100.0, 128);
+        proc->prepareToPlay (44100.0, 128);
+        era.presets->load (juce::String (argv[2]).getIntValue());
+        juce::MemoryBlock mb;
+        juce::File (argv[3]).loadFileAsData (mb);
+        const int frames = (int) (mb.getSize() / (2 * sizeof (float)));
+        const auto* src = static_cast<const float*> (mb.getData());
+        std::vector<float> outData ((size_t) frames * 2);
+        juce::AudioBuffer<float> blk (2, 128);
+        juce::MidiBuffer midi;
+        for (int pos = 0; pos < frames; pos += 128)
+        {
+            const int len = juce::jmin (128, frames - pos);
+            blk.setSize (2, len, false, false, true);
+            for (int i = 0; i < len; ++i)
+                for (int c = 0; c < 2; ++c) blk.setSample (c, i, src[2 * (pos + i) + c]);
+            proc->processBlock (blk, midi);
+            for (int i = 0; i < len; ++i)
+                for (int c = 0; c < 2; ++c) outData[(size_t) (2 * (pos + i) + c)] = blk.getSample (c, i);
+        }
+        juce::File out (argv[4]);
+        out.replaceWithData (outData.data(), outData.size() * sizeof (float));
+        std::cout << proc->getLatencySamples() << "\n";
+        return 0;
+    }
+
+    if (argc >= 3 && juce::String (argv[1]) == "--dump-presets")
+    {
+        // Every factory preset as real parameter values (input for mpc/tools/make_port_files.py)
+        auto list = juce::Array<juce::var>();
+        for (int i = 0; i < (int) entries.size(); ++i)
+        {
+            if (! entries[(size_t) i].isFactory) continue;
+            era.presets->load (i);
+            auto* obj = new juce::DynamicObject();
+            obj->setProperty ("category", entries[(size_t) i].category);
+            obj->setProperty ("name", entries[(size_t) i].name);
+            auto* values = new juce::DynamicObject();
+            for (auto* p : proc->getParameters())
+                if (auto* rp = dynamic_cast<juce::RangedAudioParameter*> (p))
+                    values->setProperty (rp->getParameterID(), rp->convertFrom0to1 (rp->getValue()));
+            obj->setProperty ("values", juce::var (values));
+            list.add (juce::var (obj));
+        }
+        juce::File out (juce::File::getCurrentWorkingDirectory().getChildFile (argv[2]));
+        out.replaceWithText (juce::JSON::toString (juce::var (list)));
+        std::cout << "wrote " << list.size() << " presets to " << out.getFullPathName() << "\n";
+        return 0;
+    }
+
     int failures = 0;
     std::cout << ERA_PLUGIN_NAME << "  latency " << proc->getLatencySamples() << " samples, "
               << entries.size() << " presets\n";

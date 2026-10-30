@@ -25,6 +25,23 @@ Formats: **VST3** (Windows & macOS) and **AU** (macOS). Maker name in your DAW: 
 3. **macOS:** download `Golden-Era-macOS`, unzip, then drag the `.vst3` folders into `/Library/Audio/Plug-Ins/VST3` and the `.component` folders into `/Library/Audio/Plug-Ins/Components`.
 4. Rescan plug-ins in your DAW (in MPC software: *Preferences → Plugins → Rescan*).
 
+## MPC standalone (VST2, Linux ARM)
+
+All four plug-ins also run **inside MPC OS** on the standalone MPCs (Live, Live II, One, X, Key 61, Force; Gen2 builds too), as native VST2
+inserts with their own touchscreen page and Q-Links. They are built on [sd88me/mpc-vst-plugins](https://github.com/sd88me/mpc-vst-plugins)
+(its VST2 wrapper and skin tools) from JUCE-free versions of the same DSP in `mpc/`.
+
+- Same sound as the desktop versions: an offline test runs every factory preset through both and compares them (Era-Q, Era-C and
+  Era-L match to within -46 dB residual or better; Era-S matches in level and tone, with 2x instead of 4x oversampling).
+- All factory presets are in MPC's **PRESET** menu.
+- No graphs on MPC (the screen is drawn by MPC from knobs and buttons): Era-Q has a band selector page plus an "All Bands" page.
+- Latency: Era-S 0.7 ms, Era-L 3 ms (look-ahead), Era-Q and Era-C none.
+
+**Install:** download **Golden-Era-MPC** from the newest **MPC (VST2 Linux ARM)** run under **Actions** (or from **Releases**).
+`-mpc-armv7.zip` is for Gen1 MPCs and the Force, `-mpc-aarch64.zip` for Gen2. Drop the zips into the
+[MPC plugin installer app](https://github.com/sd88me/mpc-vst-plugins/releases/latest), which installs them over the network with one MPC restart.
+This needs root SSH access to the MPC (a modded unit), as for every plug-in from that project. The skins are in the MPC OS 3.x format.
+
 ## Using them
 
 - **Presets:** use the bar at the top. `<` and `>` step through presets, **SAVE** stores your own, **…** opens the user preset folder (`Documents/8cee/Golden Era/<plug-in>/Presets`). A `*` after the name means you changed something.

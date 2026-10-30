@@ -1,0 +1,33 @@
+{
+ "name": "Era-Q",
+ "vendor": "8cee",
+ "uid": "EraQ",
+ "version": 1000,
+ "so": "eraq.so",
+ "params": "params.json",
+ "layout": "layout.conf",
+ "presets": "presets.json",
+ "effect": true,
+ "build": {
+  "root": "../..",
+  "sources": [
+   "mpc/EraQ/eraq_engine.cpp"
+  ],
+  "cflags": [
+   "-Impc/common",
+   "-ffast-math"
+  ],
+  "libs": [
+   "-lm",
+   "-static-libstdc++",
+   "-static-libgcc"
+  ],
+  "cflags_arm": [
+   "-mfpu=neon"
+  ]
+ },
+ "targets": [
+  "armv7",
+  "aarch64"
+ ]
+}

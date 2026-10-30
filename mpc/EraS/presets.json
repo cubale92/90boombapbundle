@@ -1,0 +1,429 @@
+{
+ "presets": [
+  {
+   "name": "Init",
+   "values": {
+    "mode": "Tape",
+    "drive": 6.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "SP 26k Grit",
+   "values": {
+    "mode": "SP 26k",
+    "drive": 3.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "SP 26k Hot Converter",
+   "values": {
+    "mode": "SP 26k",
+    "drive": 10.0,
+    "bias": 10.0,
+    "tone": 1.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "SP Filtered Loop",
+   "values": {
+    "mode": "SP 26k",
+    "drive": 5.0,
+    "bias": 0.0,
+    "tone": -2.0,
+    "lowcut": 35.437,
+    "highcut": 71.084,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Sixty 40k Swing Warmth",
+   "values": {
+    "mode": "Sixty 40k",
+    "drive": 3.0,
+    "bias": 0.0,
+    "tone": -1.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Sixty Drum Bus",
+   "values": {
+    "mode": "Sixty 40k",
+    "drive": 7.0,
+    "bias": 5.0,
+    "tone": 1.0,
+    "lowcut": 23.422,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Vari 32k Smooth",
+   "values": {
+    "mode": "Vari-Rate",
+    "drive": 2.0,
+    "bias": 0.0,
+    "tone": -1.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 87.242,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Vari 22k Lo-Fi Keys",
+   "values": {
+    "mode": "Vari-Rate",
+    "drive": 4.0,
+    "bias": 0.0,
+    "tone": -2.0,
+    "lowcut": 45.801,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 75.523,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Pitched-Down 15k",
+   "values": {
+    "mode": "Vari-Rate",
+    "drive": 5.0,
+    "bias": 0.0,
+    "tone": -3.0,
+    "lowcut": 28.083,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 63.401,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "8-Bit Basement",
+   "values": {
+    "mode": "Vari-Rate",
+    "drive": 6.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 35.437,
+    "highcut": 100.0,
+    "bits": 8.0,
+    "rate": 56.379,
+    "dust": 0.0,
+    "mix": 55.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Crushed Hat Sparkle",
+   "values": {
+    "mode": "SP 26k",
+    "drive": 2.0,
+    "bias": 0.0,
+    "tone": 3.0,
+    "lowcut": 76.578,
+    "highcut": 100.0,
+    "bits": 10.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 60.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Cassette Demo '93",
+   "values": {
+    "mode": "Tape",
+    "drive": 9.0,
+    "bias": 10.0,
+    "tone": -2.0,
+    "lowcut": 35.437,
+    "highcut": 80.391,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 12.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Reel Warm Drums",
+   "values": {
+    "mode": "Tape",
+    "drive": 7.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 17.718,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Dusty Vinyl Loop",
+   "values": {
+    "mode": "Tape",
+    "drive": 4.0,
+    "bias": 5.0,
+    "tone": -2.0,
+    "lowcut": 45.801,
+    "highcut": 74.492,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 45.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Crate Crackle Only",
+   "values": {
+    "mode": "Tape",
+    "drive": 0.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 60.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Mixtape Dub",
+   "values": {
+    "mode": "Tape",
+    "drive": 12.0,
+    "bias": 15.0,
+    "tone": -3.0,
+    "lowcut": 41.141,
+    "highcut": 71.084,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 20.0,
+    "mix": 100.0,
+    "output": -1.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Bus Tape Glue",
+   "values": {
+    "mode": "Tape",
+    "drive": 5.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 70.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "R&B Vocal Glow",
+   "values": {
+    "mode": "Tube",
+    "drive": 5.0,
+    "bias": 15.0,
+    "tone": 1.0,
+    "lowcut": 45.801,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 55.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Bass Tube Growl",
+   "values": {
+    "mode": "Tube",
+    "drive": 13.0,
+    "bias": 20.0,
+    "tone": 0.0,
+    "lowcut": 23.422,
+    "highcut": 71.084,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 70.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Rhodes Amp Bark",
+   "values": {
+    "mode": "Tube",
+    "drive": 10.0,
+    "bias": 25.0,
+    "tone": -1.0,
+    "lowcut": 35.437,
+    "highcut": 85.378,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 85.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Warm Mix Bus",
+   "values": {
+    "mode": "Tube",
+    "drive": 3.0,
+    "bias": 10.0,
+    "tone": 0.0,
+    "lowcut": 0.0,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 50.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Console Kick Push",
+   "values": {
+    "mode": "Console",
+    "drive": 9.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 23.422,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Snare Board Drive",
+   "values": {
+    "mode": "Console",
+    "drive": 14.0,
+    "bias": 10.0,
+    "tone": 2.0,
+    "lowcut": 56.166,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 80.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "NJ Drum Bus",
+   "values": {
+    "mode": "Console",
+    "drive": 6.0,
+    "bias": 0.0,
+    "tone": 2.0,
+    "lowcut": 28.083,
+    "highcut": 100.0,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": 0.0,
+    "autogain": "On"
+   }
+  },
+  {
+   "name": "Telephone Radio Hook",
+   "values": {
+    "mode": "Console",
+    "drive": 18.0,
+    "bias": 0.0,
+    "tone": 0.0,
+    "lowcut": 97.307,
+    "highcut": 39.591,
+    "bits": 12.0,
+    "rate": 80.757,
+    "dust": 0.0,
+    "mix": 100.0,
+    "output": -2.0,
+    "autogain": "On"
+   }
+  }
+ ]
+}
